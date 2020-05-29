@@ -1,0 +1,63 @@
+@mixin button-style {
+  border: none;
+  font-family: $font-menu;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #5474fd;
+}
+@mixin all-button-style {
+  @include button-style;
+  line-height: 40px;
+  width: 35%;
+  min-width: 160px;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+@mixin h2-style {
+  margin-top: 0;
+  font-family: $font-menu;
+  color: #ffffff;
+  font-size: 36px;
+}
+@mixin text-style {
+  font-family: $font-main;
+  color: #ffffff;
+  font-size: 16px;
+}
+@mixin display-flex_space-aroud_center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin flex_space-between {
+  display: flex;
+  justify-content: space-between;
+}
+@mixin style-icon {
+  color: #00a2ff;
+  font-size: 60px;
+}
+@mixin block-twin {
+  padding: 0 calc(50vw - 565px);
+  display: flex;
+  align-items: center;
+  background-position: center;
+  height: 700px;
+  &__text {
+    padding: 45px 30px;
+    background-color: #232323cc;
+    width: 50%;
+    max-width: 540px;
+    h3,
+    h2,
+    p {
+      font-family: $font-main;
+      color: #ffffff;
+    }
+    button {
+      @include all-button-style;
+    }
+  }
+}
