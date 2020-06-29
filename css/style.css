@@ -367,6 +367,14 @@ template {
   font-size: 60px;
   color: #ffffff;
 }
+@media screen and (max-width: 767px) {
+  .btn_up i {
+    font-size: 35px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+  }
+}
 .btn_up i:hover {
   cursor: pointer;
   color: #5474fd;
@@ -389,7 +397,7 @@ header h1 {
   font-size: 60px;
   margin: 0;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 576px) {
   header h1 {
     font-size: 35px;
   }

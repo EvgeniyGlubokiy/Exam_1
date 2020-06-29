@@ -4,7 +4,17 @@ $(function () {
     slidesToShow: 1,
     autoplay: true,
     speed: 1000,
-    autoplaySpeed: 800,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: false,
+        },
+      },
+    ],
   });
 });
 
