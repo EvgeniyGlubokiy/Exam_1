@@ -7,10 +7,15 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link href="fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>BYROMAON - Travel Anywhere</title>
   </head>
   <body>
+    <button class="btn_up">
+      <a href="#"><i class="fas fa-chevron-up"></i></a>
+    </button>
     <header>
       <div class="header-block">
         <h1>bhromaon</h1>
@@ -40,16 +45,18 @@
         </div>
         <ul class="nav-menu-list">
           <li class="nav-menu-list__item">
-            <a class="nav-menu-list__link" href="#">Who We Are</a>
+            <a class="nav-menu-list__link" href="#block-first">Who We Are</a>
           </li>
           <li class="nav-menu-list__item">
-            <a class="nav-menu-list__link" href="#">What We Do</a>
+            <a class="nav-menu-list__link" href="#second-block">What We Do</a>
           </li>
           <li class="nav-menu-list__item">
-            <a class="nav-menu-list__link" href="#">Travel With Us</a>
+            <a class="nav-menu-list__link" href="#fourth-block"
+              >Travel With Us</a
+            >
           </li>
           <li class="nav-menu-list__item">
-            <a class="nav-menu-list__link" href="#">Contact Us</a>
+            <a class="nav-menu-list__link" href="#block-footer">Contact Us</a>
           </li>
         </ul>
         <div class="burger-menu">
@@ -58,14 +65,16 @@
             <span></span>
           </label>
           <ul class="menu__box">
-            <li><a href="" class="menu__item">Who We Are</a></li>
-            <li><a href="" class="menu__item">What We Do</a></li>
-            <li><a href="" class="menu__item">Travel With Us</a></li>
-            <li><a href="" class="menu__item">Contact Us</a></li>
+            <li><a href="#block-first" class="menu__item">Who We Are</a></li>
+            <li><a href="#second-block" class="menu__item">What We Do</a></li>
+            <li>
+              <a href="#fourth-block" class="menu__item">Travel With Us</a>
+            </li>
+            <li><a href="#block-footer" class="menu__item">Contact Us</a></li>
           </ul>
         </div>
       </nav>
-      <div class="block-first">
+      <div class="block-first" id="block-first">
         <div class="block-first__text">
           <h2>Why Choose Us</h2>
           <p>
@@ -102,7 +111,7 @@
           <p>Book & Enjoy</p>
         </div>
       </div>
-      <div class="second-block">
+      <div class="second-block" id="second-block">
         <div class="second-block__text">
           <h3>Spain</h3>
           <h2>Grand Spain Madrid</h2>
@@ -114,7 +123,7 @@
           <button type="submit">book now</button>
         </div>
       </div>
-      <div class="third-block">
+      <div class="third-block" id="third-block">
         <div class="third-block__text">
           <h3>Spain</h3>
           <h2>Grand Spain Madrid</h2>
@@ -126,29 +135,65 @@
           <button type="submit">book now</button>
         </div>
       </div>
-      <div class="fourth-block">
+      <div class="fourth-block" id="fourth-block">
         <h2>What Our Tourist Say</h2>
-        <div class="fourth-block__content">
-          <div class="fourth-block__content__img">
-            <img src="img/img-block4.png" alt="img" />
+        <div class="slider">
+          <div class="fourth-block__content">
+            <div class="fourth-block__content__img">
+              <img src="img/img-block4.png" alt="img" />
+            </div>
+            <div class="fourth-block__content__text">
+              <h3>SAM SUMON</h3>
+              <p>
+                <span class="material-icons"> format_quote </span>But I must
+                explain to you how all this mistaken idea of account to
+                denouncinpleasure and praising pain But I must explain to you
+                how all this mistaken idea of account to nai denouncing pleasure
+                and praising pain was account born and I account will give you a
+                complete account of the system was account born and I account
+                will give you a nai the complete account of the system
+              </p>
+            </div>
           </div>
-          <div class="fourth-block__content__text">
-            <h3>SAM SUMON</h3>
-            <p>
-              <span class="material-icons"> format_quote </span>But I must
-              explain to you how all this mistaken idea of account to
-              denouncinpleasure and praising pain But I must explain to you how
-              all this mistaken idea of account to nai denouncing pleasure and
-              praising pain was account born and I account will give you a
-              complete account of the system was account born and I account will
-              give you a nai the complete account of the system
-            </p>
+          <div class="fourth-block__content">
+            <div class="fourth-block__content__img">
+              <img src="img/img-block4.png" alt="img" />
+            </div>
+            <div class="fourth-block__content__text">
+              <h3>SAM SUMON</h3>
+              <p>
+                <span class="material-icons"> format_quote </span>But I must
+                explain to you how all this mistaken idea of account to
+                denouncinpleasure and praising pain But I must explain to you
+                how all this mistaken idea of account to nai denouncing pleasure
+                and praising pain was account born and I account will give you a
+                complete account of the system was account born and I account
+                will give you a nai the complete account of the system
+              </p>
+            </div>
+          </div>
+          <div class="fourth-block__content">
+            <div class="fourth-block__content__img">
+              <img src="img/img-block4.png" alt="img" />
+            </div>
+            <div class="fourth-block__content__text">
+              <h3>SAM SUMON</h3>
+              <p>
+                <span class="material-icons"> format_quote </span>But I must
+                explain to you how all this mistaken idea of account to
+                denouncinpleasure and praising pain But I must explain to you
+                how all this mistaken idea of account to nai denouncing pleasure
+                and praising pain was account born and I account will give you a
+                complete account of the system was account born and I account
+                will give you a nai the complete account of the system
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer>
-      <div class="block-footer">
+      <div class="block-footer" id="block-footer">
         <h2>bhromaon</h2>
         <p>Safe Travel Anywhere</p>
         <object
@@ -192,5 +237,8 @@
         </object>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
